@@ -9,9 +9,9 @@ states = {
 
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
 #
-#
-#
-
+states.each do |state, abv|
+  p "#{state}'s, abreviation is #{abv}"
+end
 
 # ======================================
 # 2- Using the following Hash
@@ -25,8 +25,9 @@ birthdays = {
 
 # Use the each method to iterate through it and print out a sentence stating each friends name and birthday
 #
-#
-#
+birthdays.each do |name, bday|
+  p "#{name}'s, birthday is #{bday}"
+end
 
 
 # ======================================
@@ -39,6 +40,12 @@ login_statuses = {
   "Jeff" => true
 }
 
+
+login_statuses.each do |friend, status|
+  if status == true
+    p "#{friend} is online"
+  end
+end
 # Use the each method to iterate through it and print ONLY the names of friends who are "logged in"
 #
 #
